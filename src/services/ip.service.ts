@@ -3,8 +3,8 @@ const IpAPI = 'https://ip-geolocation-ipwhois-io.p.rapidapi.com/json/?ip=';
 const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': process.env.RAPID_API_KEY ?? "",
-      'X-RapidAPI-Host': process.env.RAPID_API_HOST ?? "",
+      'X-RapidAPI-Key': process.env.RAPID_API_KEY,
+      'X-RapidAPI-Host': process.env.RAPID_API_HOST,
     }
   };
 
