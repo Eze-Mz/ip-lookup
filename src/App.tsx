@@ -9,6 +9,10 @@ import { useGetIpData } from './hooks/useGetIpData';
 function App(): JSX.Element {
   const [ip, setIp] = useState<string>('');
   const { ipData, loading, getIpData } = useGetIpData();
+  console.log(process.env.RAPID_API_KEY);
+  console.log(process.env.RAPID_API_HOST);
+  console.log(process.env.HERE_API_KEY);
+  
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => { 
     e.preventDefault();
