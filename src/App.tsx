@@ -12,6 +12,8 @@ function App(): JSX.Element {
   console.log(process.env.RAPID_API_KEY);
   console.log(process.env.RAPID_API_HOST);
   console.log(process.env.HERE_API_KEY);
+  const api_key = process.env.RAPID_API_KEY;
+console.log(api_key);
   
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => { 
