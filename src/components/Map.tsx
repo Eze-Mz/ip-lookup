@@ -16,7 +16,7 @@ export const Map: React.FC<Props> = ({lat = 0, lng = 0}) => {
 
     useEffect(() => {
         const platform = new H.service.Platform({
-            apikey: import.meta.env.VITE_HERE_API_KEY
+            apikey: process.env.HERE_API_KEY ?? "",
         });
         const defaultLayers = platform.createDefaultLayers() as DefaultLayers;
         
