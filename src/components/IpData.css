@@ -1,0 +1,47 @@
+section {
+    margin-top: 3rem;
+}
+
+table {
+  border: 1px solid grey;
+  font-size: 12pt;
+  border-collapse: collapse;
+  width: fit-content;
+  min-width: 500px;
+}
+
+th, td {
+    padding: .5em;
+  border: 1px solid lightgrey;
+}
+
+.flag {
+    width: 25px;
+    height: 20px;
+    margin-left: 4px;
+    translate: 0 4px;
+}
+
+.data {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.raw {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .data {
+        flex-direction: column;
+        align-items: center;
+    }
+    table {
+        font-size: 0.7rem;
+        min-width: 300px;
+    }
+}
